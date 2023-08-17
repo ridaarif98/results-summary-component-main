@@ -1,0 +1,212 @@
+.attribution {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  justify-content: center;
+  font-family: Hanken Grotesk, Arial, Helvetica, sans-serif;
+  src: url(https://fonts.google.com/specimen/Hanken+Grotesk);
+}
+
+.attribution .content {
+  display: flex;
+  border-radius: 25px;
+  width: 65vw;
+  box-shadow: 5px 10px 8px #888888;
+}
+
+.attribution .content .result {
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  /* height: fit-content; */
+  align-items: center;
+  padding: 2vh 2vw;
+  background-color: hsla(234, 85%, 45%, 0.9);
+}
+
+.attribution .content .result .heading {
+  color: hsl(241, 100%, 89%);
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.attribution .content .result .result-detail {
+  height: 50%;
+  padding: 5px;
+  /* background-color: #2a2a72; */
+  background-image: linear-gradient(
+    180deg,
+    hsla(256, 72%, 46%, 1) 0%,
+    hsla(241, 72%, 46%, 0) 98%
+  );
+  background-color: hsla(241, 72%, 46%, 0);
+  border-radius: 50%;
+  width: 60%;
+  /* margin-left: 20%;
+  ma */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.attribution .content .result .result-detail .score {
+  font-weight: 700;
+  font-size: 50px;
+  color: hsl(0, 0%, 100%) !important;
+}
+
+.attribution .content .result .result-detail span {
+  color: hsl(241, 100%, 89%);
+}
+
+.attribution .content .result h2 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0;
+  padding-top: 5vh;
+  color: hsl(0, 0%, 100%) !important;
+}
+
+.attribution .content .result p {
+  text-align: center;
+  color: hsl(241, 100%, 89%);
+  font-size: 18px;
+  padding: 2px 14px 2px 14px;
+}
+
+.attribution .content .summary {
+  width: 50%;
+  text-align: left;
+  padding: 2vh 3vw 5vh 3vw;
+}
+
+.attribution .content .summary h1 {
+  color: hsl(224, 30%, 27%);
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.attribution .content .summary .reaction,
+.attribution .content .summary .memory,
+.attribution .content .summary .verbal,
+.attribution .content .summary .reaction,
+.attribution .content .summary .visual {
+  margin: 2vh 0;
+  display: flex;
+  padding: 0 1vw;
+  background-color: hsl(0, 100%, 67%);
+  border-radius: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.attribution .content .summary .reaction i,
+.attribution .content .summary .memory i,
+.attribution .content .summary .verbal i,
+.attribution .content .summary .reaction i,
+.attribution .content .summary .visual i {
+  padding-right: 1vw;
+}
+
+.attribution .content .summary .reaction {
+  background-color: hsla(0, 100%, 67%, 0.2);
+}
+.attribution .content .summary .reaction span {
+  color: hsl(0, 100%, 67%);
+  font-weight: 700;
+}
+.attribution .content .summary .memory {
+  background-color: hsla(0, 90%, 60%, 0.1);
+}
+.attribution .content .summary .memory span {
+  color: hsl(39, 100%, 56%);
+  font-weight: 700;
+}
+.attribution .content .summary .verbal {
+  background-color: hsla(234, 75%, 61%, 0.1);
+}
+
+.attribution .content .summary .verbal span {
+  color: hsl(166, 100%, 37%);
+  font-weight: 700;
+}
+.attribution .content .summary .visual {
+  background-color: hsla(234, 75%, 61%, 0.2);
+}
+.attribution .content .summary .visual span {
+  color: hsl(241, 81%, 54%);
+  font-weight: 700;
+}
+.btn-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5vh;
+}
+.btn {
+  border-radius: 25px;
+  width: 90%;
+  padding: 2vh 1vw;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(241, 81%, 54%);
+}
+
+.attribution .content .summary p {
+  color: hsla(224, 30%, 27%, 0.3);
+  font-weight: 500;
+}
+
+.attribution .content .summary p b {
+  color: black;
+}
+
+@media (max-width: 375px) {
+  .attribution .content {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100%;
+    box-shadow: none;
+    margin: 0;
+  }
+  .attribution .content .result {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+  }
+
+  .attribution .content .summary {
+    width: 100vw;
+    margin: 0 0 20vh 0;
+    padding: 0;
+  }
+
+  .attribution .content .summary h1 {
+    padding: 2vh 9vw;
+  }
+  .attribution .content .summary .reaction,
+  .attribution .content .summary .memory,
+  .attribution .content .summary .verbal,
+  .attribution .content .summary .reaction,
+  .attribution .content .summary .visual {
+    margin: 1vh 8vw 2vh 8vw;
+    padding: 0 3vw;
+  }
+  .attribution .content .summary .reaction span i,
+  .attribution .content .summary .memory span i,
+  .attribution .content .summary .verbal span i,
+  .attribution .content .summary .reaction span i,
+  .attribution .content .summary .visual span i {
+    padding-right: 2vw;
+  }
+}
